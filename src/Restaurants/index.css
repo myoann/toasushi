@@ -1,0 +1,95 @@
+.restaurants {
+  height: 80vh;
+  margin: 10vh 0;
+  padding: 3vh 2vh;
+  background: white;
+  color: black;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.topInfo {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.toggleButton {
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  width: 60vw;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto 20px auto;
+}
+
+.toggleButton div {
+  width: 50%;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.toggleButton div:first-child {
+  background: red;
+  color: white;
+  border-right: 1px solid red;
+}
+
+.resto {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: left;
+}
+
+.resto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.twoParts,
+.twoPartsClosed {
+  display: flex;
+}
+
+.twoPartsClosed {
+  color: grey;
+}
+
+.leftPart {
+  width: 85%;
+}
+
+.rightPart {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  width: 15%;
+}
+
+.rightPart img {
+  width: 38px;
+  height: 38px;
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(20%) sepia(97%) saturate(7341%) hue-rotate(359deg)
+    brightness(116%) contrast(112%);
+}
+
+.closed {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
