@@ -1,5 +1,6 @@
 import React from 'react';
 
+import header from "../images/header.png";
 import logo from "../images/logo.svg";
 
 import './index.css';

@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-import { askForPermissionToReceiveNotifications } from '../push-notification';
+import { askForPermissionToReceiveNotifications } from './push-notification';
 
 
 import Test from './Payment'
@@ -14,7 +14,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
         <button onClick={askForPermissionToReceiveNotifications} >
           Click to receive notifications
         </button>

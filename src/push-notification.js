@@ -15,13 +15,17 @@ export const initializeFirebase = () => {
 
 export const askForPermissionToReceiveNotifications = async () => {
   try {
+    console.log('1')
     const messaging = firebase.messaging();
+    console.log('2', messaging)
     await messaging.requestPermission();
+    console.log('3')
     const token = await messaging.getToken();
     console.log('Your token is:', token);
     
     return token;
   } catch (error) {
+    console.log("Mince")
     console.error(error);
   }
 }
