@@ -1,6 +1,7 @@
 .restaurants {
   height: 80vh;
-  margin: 10vh 0;
+  position: fixed;
+  top: 10vh;
   padding: 3vh 2vh;
   background: white;
   color: black;
@@ -16,8 +17,6 @@
 }
 
 .toggleButton {
-  border: 1px solid #ff0000;
-  border-radius: 4px;
   width: 60vw;
   height: 4vh;
   display: flex;
@@ -27,6 +26,7 @@
 }
 
 .toggleButton div {
+  border: 1px solid #ea9e94;
   width: 50%;
   height: 30px;
   line-height: 28px;
@@ -34,9 +34,9 @@
 }
 
 .toggleButton div:first-child {
-  background: red;
+  background: #ea9e94;
   color: white;
-  border-right: 1px solid red;
+  border-right: 1px solid #ea9e94;
 }
 
 .resto {
@@ -76,9 +76,6 @@
 .rightPart img {
   width: 38px;
   height: 38px;
-  /* https://codepen.io/sosuke/pen/Pjoqqp */
-  filter: invert(20%) sepia(97%) saturate(7341%) hue-rotate(359deg)
-    brightness(116%) contrast(112%);
 }
 
 .closed {

@@ -176,6 +176,16 @@ const CheckoutForm = () => {
     </div>
   ) : (
     <form className="Form" onSubmit={handleSubmit}>
+      <div>
+        <h3>Récapitulatif de la commande</h3>
+
+        <div>Sushi Maki x6</div>
+        <div>Gyoza x2</div>
+        <div>Coca Cola x2</div>
+        
+        <br/>
+
+      </div>
       <fieldset className="FormGroup">
         <Field
           label="Nom"

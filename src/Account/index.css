@@ -1,6 +1,7 @@
 .account {
   height: 80vh;
-  margin: 10vh 0;
+  position: fixed;
+  top: 10vh;
   padding: 3vh 2vh;
   background: white;
   color: black;
@@ -48,7 +49,7 @@
 
 .simpleLogin {
   color: #fff;
-  background-color: red;
+  background-color: #ea9e94;
 }
 
 .facebookLogin {

@@ -1,15 +1,15 @@
 import React from 'react';
 
-import logo from "../images/logo.svg";
+import {ReactComponent as BasketSVG } from "../images/shopping_basket_48px.svg";
 
 import './index.css';
 
-function Header() {
+function Header({pleaseOpenPayment}) {
   return (
     <div className="header">
 
     <div className="logoPanier">
-      <img src={logo} alt="Panier" />
+      <BasketSVG onClick={pleaseOpenPayment} />
     </div>
     </div>
   );
