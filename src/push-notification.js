@@ -19,23 +19,24 @@ export const askForPermissionToReceiveNotifications = async () => {
     const messaging = firebase.messaging();
     console.log('2', messaging)
 
-    Notification.requestPermission()
+    return Notification.requestPermission()
     .then(async function() {
       console.log('Notification permission granted.');
       // TODO(developer): Retrieve a Instance ID token for use with FCM.
       // ...
        const token = await messaging.getToken();
       console.log('Your token is:', token);
+      return token;
     })
     .catch(function(err) {
       console.log('Unable to get permission to notify. ', err);
+      return;
     });
   /*  await messaging.requestPermission();
     console.log('3')
     const token = await messaging.getToken();
     console.log('Your token is:', token); */
     
-    return token;
   } catch (error) {
     console.log("Mince")
     console.error(error);
